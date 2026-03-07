@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <title>FediDev KR — Korean fediverse Developers</title>
+  <link rel="canonical" href="https://fedidev.kr/en/">
+  <link rel="icon" href="../fedidevkr.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A community of fediverse developers
+      living in Korea or using the Korean language.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fedidev.kr/en/">
+  <meta property="og:title" content="FediDev KR — Korean fediverse Developers">
+  <meta property="og:description" content="A community of fediverse developers
+      living in Korea or using the Korean language.">
+  <meta property="og:image" content="../fedidevkr.svg">
+  <link rel="alternate" hreflang="ko" href="https://fedidev.kr/">
+  <link rel="alternate" hreflang="en" href="https://fedidev.kr/en/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="../index.css">
+  <style>
+    header>hgroup>img:first-child {
+      display: block;
+      margin: auto;
+    }
+
+    dfn {
+      font-style: normal;
+      font-weight: bold;
+    }
+
+    .lang-switcher {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 10;
+      font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .lang-switcher a {
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      text-decoration: none;
+      color: var(--pico-muted-color);
+    }
+
+    .lang-switcher a:hover {
+      color: var(--pico-color);
+    }
+
+    .lang-switcher .current {
+      color: var(--pico-color);
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="universe"></div>
+  <nav class="lang-switcher">
+    <a href="/">한국어</a>
+    <span class="current">English</span>
+  </nav>
+  <header class="container">
+    <hgroup>
+      <div class="logo">
+        <img src="../fedidevkr.svg" alt="FediDev KR logo" width="150" height="100">
+      </div>
+      <div>
+        <h1>FediDev KR</h1>
+        <p class="description">A community of fediverse developers living in Korea
+          or using the Korean language.</p>
+      </div>
+    </hgroup>
+  </header>
+  <main class="container">
+    <h2>What is the fediverse?</h2>
+    <p>The <dfn>fediverse</dfn> (short for “federated universe”) is a network of
+      interoperable social media services. These services run on different servers
+      and software, but users can communicate with each other without needing to
+      sign up for each other's services. Technically, it uses W3C standards such as
+      <a href="#ActivityPub">ActivityPub</a> along with protocols like WebFinger.
+      Major implementations include Meta's <a href="https://www.threads.net">Threads</a>
+      and open source projects such as
+      <a href="https://joinmastodon.org/">Mastodon</a>,
+      <a href="https://misskey-hub.net/">Misskey</a>, and
+      <a href="https://pixelfed.org/">Pixelfed</a>.
+      Software like <a href="https://wordpress.org/">WordPress</a> and
+      <a href="https://www.discourse.org/">Discourse</a> can also participate
+      in the fediverse through plugins or extensions.
+    </p>
+    <h2 id="ActivityPub">What is ActivityPub?</h2>
+    <p><dfn>ActivityPub</dfn> is a protocol standard established by the
+      <abbr title="World Wide Web Consortium">W3C</abbr> that enables social media
+      services to communicate with each other. It defines features such as following
+      users, exchanging messages, sharing posts, and leaving comments. The standard
+      is available in the
+      <a href="https://www.w3.org/TR/activitypub/">W3C official documentation</a>.</p>
+    <h2>Who are fediverse developers?</h2>
+    <p>In this community, <dfn>fediverse developers</dfn> refers not only to
+      developers who build or operate social media services participating in the
+      fediverse, but also to people engaged in technical research or activities
+      related to the fediverse, as well as those who write about or translate
+      fediverse-related content. This community aims to provide a space where
+      such people can communicate and share information with one another.</p>
+    <h2>How to join</h2>
+    <p>If you would like to join this community, please join our
+      <a href="https://discord.gg/B2ABMBpHNA">Discord server</a>. This is an
+      open chat room for fediverse developers who speak Korean, where you can
+      share news, ask technical questions, and exchange information. We also
+      plan to hold offline meetups and workshops in the future.</p>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+  <script src="../universe.js" defer></script>
+</body>
+
+</html>

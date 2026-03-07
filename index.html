@@ -15,6 +15,8 @@
   <meta property="og:description" content="한국에 거주하거나 한국어를
       사용하는 연합우주(fediverse) 개발자들의 모임입니다.">
   <meta property="og:image" content="fedidevkr.svg">
+  <link rel="alternate" hreflang="ko" href="https://fedidev.kr/">
+  <link rel="alternate" hreflang="en" href="https://fedidev.kr/en/">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
   <link rel="stylesheet" href="/index.css">
   <style>
@@ -27,11 +29,41 @@
       font-style: normal;
       font-weight: bold;
     }
+
+    .lang-switcher {
+      position: fixed;
+      top: 4rem;
+      right: 1rem;
+      z-index: 10;
+      font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .lang-switcher a {
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      text-decoration: none;
+      color: var(--pico-muted-color);
+    }
+
+    .lang-switcher a:hover {
+      color: var(--pico-color);
+    }
+
+    .lang-switcher .current {
+      color: var(--pico-color);
+      font-weight: bold;
+    }
   </style>
 </head>
 
 <body>
   <div class="universe"></div>
+  <nav class="lang-switcher">
+    <span class="current">한국어</span>
+    <a href="/en/">English</a>
+  </nav>
   <header class="container">
     <hgroup>
       <div class="logo">
